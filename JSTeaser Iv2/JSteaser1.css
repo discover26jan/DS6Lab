@@ -1,0 +1,44 @@
+﻿body 
+{
+	background-color: #F3F3F3;
+}
+.white
+{
+	padding: 0px;
+	margin: 0px;
+	border: 4px groove #336699;
+	background-color: White;
+	display: inline-table;
+	width: 50px;
+	height: 50px;
+	color: #000000;
+	cursor: help;
+}
+.black
+{
+	padding: 0px;
+	margin: 0px;
+	border: 4px groove #336699;
+	background-color: Black;
+	display: inline-table;
+	width: 50px;
+	height: 50px;
+	color: #FFFFFF;
+	cursor: help;
+}
+.main
+{
+	padding: 0px;
+	margin: 0px;
+}
+.introtext
+{
+	font-family: Calibri;
+	font-size: 14px;
+	font-weight: bolder;
+	font-style: normal;
+	font-variant: normal;
+	color: #333399;
+}
+
+
