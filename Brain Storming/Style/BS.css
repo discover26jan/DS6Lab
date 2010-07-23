@@ -1,0 +1,205 @@
+﻿body
+{
+	border-top:2px solid #D02849;
+	font-family:Helvetica,Arial,"MS Trebuchet",sans-serif;
+	margin:0;
+	padding:0;	
+}
+.header_div
+{
+	padding: 10px;
+	background-color: #FBFBFB;
+	height: 42px;
+}
+.logoL
+{ 
+	float: left;
+}
+.logoR
+{ 
+	float: right;
+	margin-top: 10px;
+}
+.toolbar_div
+{
+	background:none repeat scroll 0 0 #F0F0F0;
+	border-bottom:1px solid #CAC6C2;
+	border-top:1px solid #F7F4EB;
+	height:33px;
+	vertical-align:bottom;
+}
+#idea
+{
+	margin-left:10px;
+}
+#btn_add_idea
+{
+	border-width: 0px;
+	border-color: #FFFFFF;
+	background-image: url('../Images/add-idea.gif');
+	background-repeat: no-repeat;
+	position: relative;
+	top: 2px;
+	left: 20px;
+	height: 30px;
+	width: 90px;	
+}
+#btn_finished
+{
+	border-width: 0px;
+	border-color: #FFFFFF;
+	background-image: url('../Images/finish.gif');
+	position: relative;
+	top: 2px;
+	left: 20px;
+	height: 30px;
+	width: 90px;
+}
+#btn_help
+{
+	border-width: 0px;
+	border-color: #FFFFFF;
+	background-image: url('../Images/help.gif');	
+	margin-top: 2px;
+	float:right;
+	margin-right:5px; 	
+	height: 30px;
+	width: 60px;
+	background-repeat: no-repeat;
+}
+#btn_print
+{
+	border-width: 0px;
+	border-color: #FFFFFF;
+	background-image: url('../Images/print.gif');
+	float:right;
+	margin-right:15px; 	
+	margin-top: 2px;
+	height: 30px;
+	width: 66px;
+	background-repeat: no-repeat;
+}
+#BStitle
+{
+	border:medium none;
+	color:#0D0D0D;
+	font-family:Verdana;
+	font-size:1.1em;
+	text-align:center;
+	width:40%;
+}
+#BStitle.title_focus
+{
+	background-color: #E6E6E6;
+} 
+.content_div
+{
+	padding: 10px;	
+}
+.container_div
+{
+	position:absolute;
+	top:160px;
+}
+.container_div div
+{
+	background-position: 0 0;
+	background: transparent url('../Images/post-it.gif') no-repeat scroll 0 0;
+	cursor: move;
+	float: left;
+	font-family: verdana;
+	font-size: 0.75em;
+	height: 96px;
+	text-align: center;
+	width: 196px;	
+}
+.container_div textarea
+{
+	background:none repeat scroll 0 0 #FCF8B1;
+	border:medium none;
+	float:left;
+	height:50px;
+	margin-left:10px;
+	margin-top:10px;
+	overflow:hidden;
+	padding:3px;
+	text-align:center;
+	width:159px;
+}
+.container_div a.cross
+{
+	background:url("../Images/cross.gif") no-repeat scroll 0 0 transparent;
+	display:inline;
+	float:right;
+	font-size:1px;
+	height:20px;
+	padding:3px;
+	text-decoration:none;
+	width:20px;
+}
+.container_div textarea.txt_focus
+{
+	background: #FFF4DC
+}
+center
+{
+	padding:5px;
+}
+#testdiv 
+{
+	width:600px; 
+	margin:0 auto;
+	border:1px solid #ccc;
+	padding:20px 25px;
+	background:#fff
+}
+#tinybox 
+{
+	position:absolute; 
+	display:none; 
+	padding:10px; 
+	background:#fff url(Images/preload.gif)no-repeat 50% 50%; 
+	border:10px solid #e3e3e3; 
+	z-index:2000
+}
+#tinymask 
+{	
+	position:absolute;
+	display:none; 
+	top:0;
+	left:0;
+	height:100%;
+	width:100%; 
+	background:#000; 
+	z-index:1500
+}
+#tinycontent 
+{
+	background:#fff
+}
+.button 
+{
+	font:14px Georgia,Verdana;
+	margin-bottom:10px;
+	padding:8px 10px 9px;
+	border:1px solid #ccc;
+	background:#eee; 
+	cursor:pointer
+}
+.button:hover 
+{
+	border:1px solid #bbb; 
+	background:#e3e3e3
+}
+div#footer
+{
+	background:none repeat scroll 0 0 #ECECEA;
+	border-top:1px solid #999999;
+	bottom:0;
+	font-family:Verdana;
+	font-size:8pt;
+	height:20px;
+	left:0;
+	position:fixed;
+	width:100%;
+}

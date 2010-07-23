@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Brain Storming - Discover 6 Sigma Lab</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="Style/BS.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/BSscript.js" type="text/javascript"></script>
+	<script src="Scripts/tinybox.js" type="text/javascript"></script>
+    <script src="Scripts/prototype.js" type="text/javascript"></script>
+    <script src="Scripts/scriptaculous.js" type="text/javascript"></script>	
+</head>
+<body onload="$('idea').focus();">	
+	
+    <div id="main" class="main_div">
+        <div id="header" class="header_div">
+            <img alt="Displaying" src="Images/d6s-logo.gif" id="logo" class="logoL"/>
+            <img alt="Displaying" src="Images/brainstorming-text.gif" id="BSimg" class="logoR"/>
+        </div>
+        <div id="toolbar" class="toolbar_div">
+            <input type="text" id="idea" onkeypress="if(event.keyCode==13) $('btn_add_idea').click();"  />
+            <input type="button" id="btn_add_idea" onclick="javascript:addIdea();" />
+            <input type="button" id="btn_finished" onclick="$('btn_add_idea').hide();$('idea').hide();$('btn_finished').hide();" />            
+            <input type="button" id="btn_print" onclick="window.print()" />
+            <input type="button" id="btn_help" onclick="alert('Coming Soon!')" />
+        </div>
+        <div id="content" class="content_div">
+            <center><input type="text" value="Click here to enter brainstorming theme" id="BStitle" onfocus="if (this.value=='Click here to enter brainstorming theme') {this.value = '';} this.addClassName('title_focus');" onblur="if(this.value=='') {this.value = 'Click here to enter brainstorming theme';} this.removeClassName('title_focus');" /></center>
+            <div id="container" class="container_div">
+            </div>
+        </div>
+		
+		<div id="footer">			
+ 			<input type="button" value="Save" onclick="javascript:saveSession();" />
+			<input type="button" value="Load" onclick="javascript:loadSession();" />				
+			<input type="button" value="Save_Location" onclick="javascript:showTiny('Enter File location to SaveState.');" />
+			<input type="button" value="Load_Location" onclick="javascript:showTiny('Enter File location to Load State.');" />	
+			<input type="button" value="Instruction" onclick="javascript:showInstruction();" />				
+		</div>		
+    </div>	
+</body>
+</html>
+
